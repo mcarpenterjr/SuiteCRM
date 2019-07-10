@@ -124,7 +124,6 @@ $install_script = true;
 //// INSTALL RESOURCE SETUP
 $css = 'install/install.css';
 $icon = 'include/images/sugar_icon.ico';
-$sugar_md = 'include/images/sugar_md_open.png';
 $loginImage = 'include/images/suitecrm_login.png';
 $common = 'install/installCommon.js';
 
@@ -476,12 +475,9 @@ elseif (is_file('config_si.php') && empty($sugar_config['installer_locked'])) {
     <tr>
       <th width="500">
 		<p>
-		<img src="{$sugar_md}" alt="SugarCRM" border="0">
+		  <a href="http://www.sugarcrm.com" target="_blank"><IMG src="{$loginImage}" alt="SugarCRM" border="0">
 		</p>
 		{$mod_strings['LBL_TITLE_WELCOME']} {$setup_sugar_version} {$mod_strings['LBL_WELCOME_SETUP_WIZARD']}</th>
-
-      <th width="200" height="30" style="text-align: right;"><a href="http://www.sugarcrm.com" target="_blank"><IMG src="{$loginImage}" alt="SugarCRM" border="0"></a>
-      </th>
     </tr>
     <tr>
       <td colspan="2"  id="ready_image"><IMG src="include/images/install_themes.jpg" width="698" height="247" alt="Sugar Themes" border="0"></td>
